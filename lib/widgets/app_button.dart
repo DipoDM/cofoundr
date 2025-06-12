@@ -5,7 +5,7 @@ class AppButton extends StatelessWidget {
   final String label;
   final Color color;
   final Color textColor;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   final Widget? icon;
 
   const AppButton({

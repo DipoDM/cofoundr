@@ -1,3 +1,5 @@
+import 'package:cofoundr/views/auth/profile_setup_view.dart';
+import 'package:cofoundr/views/auth/sign_up_view.dart';
 import 'package:cofoundr/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -15,7 +17,7 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/signin',
         builder: (context, state) => const SignInView(),
       ),
-      /* GoRoute(
+      GoRoute(
         path: '/signup',
         builder: (context, state) => const SignUpView(),
       ),
@@ -23,7 +25,7 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/profile-setup',
         builder: (context, state) => const ProfileSetupView(),
       ),
-      GoRoute(
+      /*GoRoute(
         path: '/match',
         builder: (context, state) => const SwipeMatchView(),
       ),*/
